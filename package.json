@@ -16,7 +16,8 @@
     "typeorm": "yarn build && npx typeorm -d dist/database/database.config.js",
     "migration:generate": "yarn typeorm -- migration:generate",
     "migration:run": "yarn typeorm -- migration:run",
-    "migration:revert": "yarn typeorm -- migration:revert"
+    "migration:revert": "yarn typeorm -- migration:revert",
+    "import": "ts-node ./src/cli.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

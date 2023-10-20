@@ -6,7 +6,7 @@ import { dataSourceOptions } from './database/database.config';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    TypeOrmModule.forRoot(dataSourceOptions)
+    TypeOrmModule.forRoot(dataSourceOptions),
   ],
 })
 export class AppModule {}
