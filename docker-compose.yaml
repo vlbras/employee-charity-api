@@ -9,3 +9,9 @@ services:
       - .env
     ports:
       - "${DB_PORT}:${DB_PORT}"
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "${REDIS_PORT}:${REDIS_PORT}"
